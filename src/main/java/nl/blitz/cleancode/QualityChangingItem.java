@@ -1,4 +1,4 @@
-package nl.blitz.exercisename;
+package nl.blitz.cleancode;
 
 public abstract class QualityChangingItem extends Item {
 

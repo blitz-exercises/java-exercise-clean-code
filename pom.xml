@@ -5,8 +5,8 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>nl.blitz.exercisename</groupId>
-    <artifactId>exercise-name-kata</artifactId>
+    <groupId>nl.blitz.cleancode</groupId>
+    <artifactId>clean-code-kata</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>

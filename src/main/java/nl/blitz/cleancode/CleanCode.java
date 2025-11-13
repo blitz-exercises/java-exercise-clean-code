@@ -1,9 +1,9 @@
-package nl.blitz.exercisename;
+package nl.blitz.cleancode;
 
-class ExerciseName {
+class CleanCode {
     Item[] items;
 
-    public ExerciseName(Item[] items) {
+    public CleanCode(Item[] items) {
         this.items = items;
     }
 

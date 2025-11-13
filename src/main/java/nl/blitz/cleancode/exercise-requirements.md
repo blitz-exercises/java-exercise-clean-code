@@ -1,6 +1,6 @@
-# ExerciseName Requirements Specification
+# CleanCode Requirements Specification
 
-Replace this file with the requirements for your exercise. This is a template that should be customized for each exercise.
+This exercise focuses on applying clean code principles to improve code quality, readability, and maintainability.
 
 ## Exercise Overview
 

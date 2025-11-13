@@ -1,11 +1,11 @@
-package nl.blitz.exercisename;
+package nl.blitz.cleancode;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 
-class ExerciseNameTest {
+class CleanCodeTest {
 
     @BeforeEach
     void setUp() {

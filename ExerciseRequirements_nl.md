@@ -1,6 +1,6 @@
-# ExerciseName Requirement Specificaties
+# CleanCode Requirement Specificaties
 
-Vervang dit bestand met de vereisten voor jouw oefening. Dit is een sjabloon dat aangepast moet worden voor elke oefening.
+Deze oefening richt zich op het toepassen van clean code principes om codekwaliteit, leesbaarheid en onderhoudbaarheid te verbeteren.
 
 ## Oefening Overzicht
 

@@ -1,8 +1,8 @@
-package nl.blitz.exercisename;
+package nl.blitz.cleancode;
 
 public class TexttestFixture {
     public static void main(String[] args) {
-        System.out.println("ExerciseName Test Fixture");
+        System.out.println("CleanCode Test Fixture");
 
         // TODO: Replace with your exercise-specific test data
         Item[] items = new Item[] {
@@ -11,7 +11,7 @@ public class TexttestFixture {
                 new Item("Item 3", 5, 7)
         };
 
-        ExerciseName app = new ExerciseName(items);
+        CleanCode app = new CleanCode(items);
 
         int days = 2;
         if (args.length > 0) {
