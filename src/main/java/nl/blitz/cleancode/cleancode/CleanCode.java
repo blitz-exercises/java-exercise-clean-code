@@ -10,20 +10,13 @@ class CleanCode {
     public String daySimulator(int days) {
         while (days > 0) {
             for (Item item : items) {
-                if (item instanceof QualityChangingItem) {
+                if (item.qualityCanChance()) {
                     days--;
-                    return ((QualityChangingItem) item).updateQuality();
-                } else if (item instanceof QualityPreservingItem) {
-                    days--;
-                    return "A Legendary Item always maintains the same quality and " + item.name
-                            + "'s quality is " + item.quality;
+                    return item.updateQuality();
                 }
-                days--;
-                return "This is a unindentified item so their behavious is unknown, research required";
             }
         }
         return "The simulation has ended";
-
     }
 }
 

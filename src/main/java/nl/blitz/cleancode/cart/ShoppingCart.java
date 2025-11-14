@@ -16,11 +16,7 @@ class ShoppingCart {
     }
 
     public void addItem(int productId, String name, double price, int quantity) {
-        CartItem item = new CartItem();
-        item.productId = productId;
-        item.name = name;
-        item.price = price;
-        item.quantity = quantity;
+        CartItem item = new CartItem(productId, name, price, quantity);
         items.add(item);
         total += price * quantity;
     }
@@ -52,13 +48,6 @@ class ShoppingCart {
             sum += item.price * item.quantity;
         }
         return sum;
-    }
-
-    class CartItem {
-        public int productId;
-        public String name;
-        public double price;
-        public int quantity;
     }
 }
 

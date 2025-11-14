@@ -132,7 +132,8 @@ This document lists all clean code violations found across the project, organize
 - Inconsistent spacing throughout code
 - Missing blank lines between logical sections
 
-### Long Lines
+### Long Lines--
+
 - Long method with deep nesting
 - Lines exceed recommended length
 

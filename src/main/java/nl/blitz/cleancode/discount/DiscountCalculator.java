@@ -4,10 +4,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 class DiscountCalculator {
-    public double calculateDiscount(double price, String customerType, Date purchaseDate) {
+    public double calculateDiscount(double price, Customer customer, Date purchaseDate) {
         double discount = 0;
-        
-        // check if it's black friday
+
         Calendar cal = Calendar.getInstance();
         cal.setTime(purchaseDate);
         int month = cal.get(Calendar.MONTH);
@@ -16,7 +15,8 @@ class DiscountCalculator {
             discount = price * 0.3;
         }
         
-        // apply customer type discount
+        // 
+        String customerType = customer.getCustomerType();
         if (customerType.equals("PREMIUM")) {
             discount += price * 0.1;
         } else if (customerType.equals("GOLD")) {
@@ -24,19 +24,18 @@ class DiscountCalculator {
         } else if (customerType.equals("VIP")) {
             discount += price * 0.2;
         }
-        
-        // check bulk discount
+
         if (price > 1000) {
             discount += price * 0.05;
         }
-        
+
         return discount;
     }
 
     public boolean isValidDiscountCode(String code) {
-        // call external API directly
         try {
-            java.net.URL url = new java.net.URL("http://api.discountservice.com/validate?code=" + code);
+            java.net.URL url =
+                    new java.net.URL("http://api.discountservice.com/validate?code=" + code);
             java.net.HttpURLConnection conn = (java.net.HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             int responseCode = conn.getResponseCode();
