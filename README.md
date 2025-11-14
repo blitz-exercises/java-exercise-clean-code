@@ -33,6 +33,52 @@ See [exercise-requirements.md](src/main/java/nl/blitz/cleancode/exercise-require
 mvn test
 ```
 
+## Decoding Violation Documentation
+
+Each folder contains a `violations.md` file with base64-encoded documentation listing all clean code violations for that folder. To read these violations, you need to decode them first.
+
+### Using Bash (Linux/Mac)
+
+To decode all violation files:
+```bash
+./decode-violations.sh
+```
+
+To decode a specific folder:
+```bash
+./decode-violations.sh <folder_name>
+```
+
+Example:
+```bash
+./decode-violations.sh cleancode
+./decode-violations.sh user
+./decode-violations.sh order
+```
+
+The decoded files will be created as `violations-decoded.md` in each folder.
+
+### Using PowerShell (Windows)
+
+To decode all violation files:
+```powershell
+.\decode-violations.ps1
+```
+
+To decode a specific folder:
+```powershell
+.\decode-violations.ps1 <folder_name>
+```
+
+Example:
+```powershell
+.\decode-violations.ps1 cleancode
+.\decode-violations.ps1 user
+.\decode-violations.ps1 order
+```
+
+The decoded files will be created as `violations-decoded.md` in each folder.
+
 ## Contributing
 
 Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for more details.
